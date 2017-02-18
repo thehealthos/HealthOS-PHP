@@ -1,0 +1,29 @@
+{
+    "name": "apimatic/healthos",
+    "type": "library",
+    "description": "Welcome to HealthOS API!   HealthOS allows you to create world class healthcare applications, leveraging our data source of medicines (generics and branded), food items (with nutrition value), various excercises and physical activities, lab tests, diseases etc.  The API is organized around REST. All requests should be made over SSL. All request and response bodies, including errors, are encoded in JSON.",
+    "keywords": ["HealthOS","API","SDK"],
+    "homepage": "https://apimatic.io",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mehdi Jaffery",
+            "email": "mehdi.jaffery@apimatic.io",
+            "homepage": "https://github.com/apimatic",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "mashape/unirest-php": "~3.0.1",
+        "apimatic/jsonmapper": "~1.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "HealthOSLib\\": "src/"
+        }
+    }
+}
